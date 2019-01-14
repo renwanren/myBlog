@@ -1,0 +1,22 @@
+.wrapping {
+    display: inline-block;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 30px 50px;
+}
+.input {
+    display: block;
+    margin: 10px 5px;
+    border-radius: 3px;
+    border-width: 1px;
+}
+
+.btn {
+    width: 120px;
+    height: 27px;
+    border-radius: 3px;
+    border-width: 0px;
+    color: white;
+    background-color: #1890ff;
+}
