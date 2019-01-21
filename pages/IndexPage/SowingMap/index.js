@@ -1,3 +1,6 @@
+/**
+ *sowingMap: 轮播图
+ *  */
 import React from 'react'
 import style from './style/sowingMap.css'
 

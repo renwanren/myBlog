@@ -2,8 +2,13 @@ import React from "react"
 import style from './style/tab.css'
 
 let Tab = (props) => {
-    let children = props.tabs.map((item, index) => {
-        return <span key={item.key} className={props.selected===index ? style.selected : null}>{item.name}</span>
+    const {tabs, onClick} = {...props}
+    console.log(onClick)
+    const clickFunc = function(){
+        console.log('2343')
+    }
+    const children = tabs.map((item, index) => {
+        return <span key={item.key} onClick={onClick} className={props.selected===index ? style.selected : null}>{item.name}</span>
     })
     return (
         <div className={style.wrapping}>

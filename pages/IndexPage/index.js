@@ -18,11 +18,17 @@ import resetStyle from './style/reset.css'
  * 2. 无生命周期
  *  */
 let IndexPage = (props) => {
+    const TabProps = {
+        onClick: function(e){
+            console.log(e)
+        },
+    }
+
     return (
         <div>
             <SowingMap />
-            <Tab />
-            <div style={{width: "100%", height: "100%", textAlign: "center", backgroundColor: "#f2f4f5"}}>
+            <Tab {...TabProps}/>
+            <div style={{width: "100%", minHeight: "1000px", textAlign: "center", backgroundColor: "#f2f4f5"}}>
                 <BlogList style={{display: "inline-block"}} />
                 <SideBar style={{display: "inline-block"}} />                
             </div>

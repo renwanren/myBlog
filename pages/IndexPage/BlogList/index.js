@@ -1,3 +1,6 @@
+/**
+ * Blog列表
+ *  */
 import React from "react"
 import PropTypes from "prop-types"
 import blogStyle from './style/BlogList.css'
@@ -21,6 +24,7 @@ let BlogList = (props) => {
     )
 }
 
+// 默认Props
 BlogList.defaultProps = {
     articleList: [{
                         title: "my Blog",
