@@ -5,10 +5,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import blogStyle from './style/BlogList.css'
 
-let BlogList = (props) => {
-    let {style, articleList} = props
+const BlogList = (props) => {
+    const {style, articleList} = props
     function makeArticle(articleList){
-        let article = articleList.map(item => {
+        const article = articleList.map(item => {
             return (<div key={item.id} className = {blogStyle.article}>
                 <h5>{item.title}</h5>
                 <p>{item.pragraph}</p>
